@@ -48,6 +48,10 @@ def groupproject():
 def grouproles():
     return render_template("grouproles.html")
 
+@app.route('/sprint')
+def sprint():
+    return render_template("sprint.html")
+
 # this runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
