@@ -40,6 +40,14 @@ def haeryn():
 def annika():
     return render_template("annika.html")
 
+@app.route('/groupproject/')  # connects /stub/ URL to stub() function
+def groupproject():
+    return render_template("groupproject.html")
+
+@app.route('/grouproles')
+def grouproles():
+    return render_template("grouproles.html")
+
 # this runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)

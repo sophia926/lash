@@ -1,0 +1,31 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Group Project" %}
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here, bootstrap is a wise choice ->
+    <div class="px-5 py-5 mx-auto">
+        <h1 class="text-primary"><strong>Group Project</strong></h1>
+        <p class="text-secondary">Our project is making a planner where people can write about they're planning to do as well as record their daily moments and messages.</p>
+        <ol class="text-secondary">
+            <li>Program Purpose and Function</li>
+            <p>The purpose of the program is to provide a platform in which users can schedule and plan out their day, as well as take into account their mindfulness and mental health.</p>
+            <li>Data Abstraction</li>
+            <p>Information such as ratings and scales will be stored in lists, which demonstrates data abstraction.</p>
+            <li>Managing Complexity</li>
+            <p>The list will have to contain the items to display.</p>
+            <li>Procedural Abstraction</li>
+            <p>The procedures will involve creating events or tasks, or creating journal entries.</p>
+            <li>Algorithm Implementation</li>
+            <p>Looping through days and months and years will require algorithm implementation</p>
+            <li>Testing</li>
+            <p>There can be functions such as "overview of your week" that need to call different values from different places.</p>
+            <p></p>
+        </ol>
+    </div>
+{% endblock %}
+{% block background %}
+{% endblock %}
