@@ -7,3 +7,20 @@
 {% set scrumboard = "https://haeryny.github.io/yuyuyu/" %}
 {% set repo = "https://github.com/sophia926/lash" %}
 {% set authors = "https://github.com/sophia926/lash"  %}
+
+<!-- Setting up a block replacement to customize background to RINGS -->
+{% block background %}
+    <script src="{{ url_for('static', filename='js/three.r119.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vanta.halo.min.js') }}"></script>
+    <script>
+        VANTA.HALO({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+        })
+    </script>
+
+{% endblock %}
