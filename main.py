@@ -25,16 +25,9 @@ def stub():
 def sophia():
     return render_template("sophia.html")
 
-
-@app.route('/liav/')  # connects /stub/ URL to stub() function
-def liav():
-    return render_template("liav.html")
-
-
 @app.route('/haeryn/')  # connects /stub/ URL to stub() function
 def haeryn():
     return render_template("haeryn.html")
-
 
 @app.route('/annika/')  # connects /stub/ URL to stub() function
 def annika():

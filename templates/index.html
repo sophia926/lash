@@ -4,21 +4,23 @@
 {% block body %}
     <!-- Start of body content specific to page -->
     <div class="px-5 py-5 mx-auto">
-        <h1 class="text-white"><strong>Python Home Page</strong></h1>
+        <h1 class="text-white"><strong>Lash Homepage</strong></h1>
         <div class="row">
             <div class="col-4">
                 <div class="card">
                     <img class="card-img-top" src="{{ url_for('static', filename='assets/python.jpeg') }}" alt="Python Development" height="250">
                     <div class="card-body">
-                    <h5 class="card-title">What should <mark>Student Developers learn</mark>?</h5>
+                    <h5 class="card-title">Our project's <mark>purpose and plans </mark></h5>
                     <p class="card-text">
-                        <ol>
-                            <li>Python 3.9 is used for most of our backend PBL. HTML, CSS, JavaScript will be used in frontend</li>
-                            <li>Visuals Studio Code (VS Code) is the primary editor, Interactive Development Environment (IDE).</li>
-                            <li>GitHub.  Managing and sharing code change, branches, pull requests, issues, and more will be through GitHub.</li>
-                            <li>DevOps. Python programmers should have a passion for managing the environment and learning automation (Git, Linux, Bash, Python Packages, Docker).</li>
-                            <li>API and Microservice using Flask.  Mastering development techniques in creating and consuming RESTful APIs</li>
-                        </ol>
+                        <ul>
+                            <li>The purpose of the program is to provide a platform in which users can schedule and plan out their day, as well as take into account their mindfulness and mental health.</li>
+                            <li>The plans we have for our project:</li>
+                                <ul>
+                                    <li>We are planning on making a website that records your journal entries by title and date.</li>
+                                    <li>The website will include an API that tells you a motivational quote and another API that generates gratitude questions</li>
+                                    <li>This website is trying to promote mental health and journaling is a way to improve that.</li>
+                                </ul> 
+                        </ul>
                     </p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
