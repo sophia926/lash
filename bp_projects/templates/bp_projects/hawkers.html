@@ -1,0 +1,25 @@
+<!-- Extending the project layout, as this file will do minor customizations -->
+{% extends "layouts/project.html" %}
+
+<!-- Setting up variables to customize "project" details to be specific to kangaroos -->
+{% set project = "Annika Liao" %}
+{% set overview = "https://annikaliao.github.io/annika/" %}
+{% set scrumboard = "https://annikaliao.github.io/annika/" %}
+{% set repo = "https://github.com/sophia926/lash" %}
+{% set authors = "https://github.com/sophia926/lash"  %}
+
+<!-- Setting up a block replacement to customize background to RINGS -->
+{% block background %}
+    <script src="{{ url_for('static', filename='js/three.r119.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vanta.halo.min.js') }}"></script>
+    <script>
+        VANTA.HALO({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+        })
+    </script>
+{% endblock %}
